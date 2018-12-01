@@ -14,10 +14,13 @@ $(document).ready(function(){
         } else {
             for (let i = 0; i < frames.length; i++) {
                 frames[i].classList.remove('active')
-                frames[i].style.opacity = '0.5'
+                frames[i].style.opacity = '0.4'
             }
-            $(this).addClass('active')
-            $('#color-overlay').css('background', this.dataset.complementary)
+            var t = this;
+            setTimeout(function(){
+                $(t).addClass('active')
+                // $('#color-overlay').css('background', t.dataset.complementary)    
+            },300);
         }
     });
 })
