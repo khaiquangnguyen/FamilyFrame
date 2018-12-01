@@ -1,0 +1,44 @@
+body{
+    background-image: url(wave.jpeg);
+    background-size: cover;
+}
+
+#color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: inline-block;
+ }
+
+
+/* .frame:hover{
+    width: 500px;
+    height: 500px;
+
+} */
+
+.frame {
+    display: inline-block;
+    width:150px;
+    height:150px;
+    transition: all 250ms ease-in;
+    margin: 20px;
+}
+
+.frame.active {
+    width: 500px;
+    height: 500px;
+    opacity: 1 !important;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 60%;
+}
