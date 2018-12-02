@@ -3,6 +3,19 @@ body{
     background-size: cover;
 }
 
+h1{
+    font: 600 1.8em/1 'Open Sans', sans-serif;
+    font-weight: bold;
+
+  }
+
+  h2{
+    font: 100 1em/1 'Open Sans', sans-serif;
+    font-weight: light;
+
+  }
+
+
 #color-overlay {
     position: absolute;
     top: 0;
@@ -26,7 +39,7 @@ body{
 } */
 
 .frame {
-    display: inline-block;
+    display: block;
     width:10em;
     height:10em;
     transition: all 0.6s ease-in-out;
@@ -38,7 +51,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 60em;
+    width: 1100px;
 }
 
 #frame1{
@@ -75,26 +88,37 @@ body{
     background-size: cover;
 }
 
+.sub {
+    opacity: 0 !important;
+    display: None;
+}
 
+.sub.active{
+    display: block;
+    opacity: 1 !important;
+}
 .frame.active {
-    width: 20em;
-    height: 20em;
+    width: 300px;
+    height: 300px;
     opacity: 1 !important;
     transition: all 0.5s ease-in-out;
 }
 
+#fram1 .frame .active{
+    background-image: none;
+}
 #frame7.active {
     background-image: url(Img/7.png);
     background-size: cover;
-    width: 14em;
-    height: 22em;
+    width: 200px;
+    height: 330px;
     opacity: 1 !important;
 }
 
 #frame2.active {
     background-image: url(Img/10.png);
     background-size: cover;
-    width: 38em;
-    height: 25em;
+    width: 600px;
+    height: 400px;
     opacity: 1 !important;
 }
