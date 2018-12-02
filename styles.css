@@ -103,8 +103,8 @@ h1{
 }
 #video.active{
     transition: all 0.5s ease-in-out;
-    width: 200px;
-    height: 330px;
+    width: 600px;
+    height: 400px;
 
 }
 .frame.active {
@@ -116,8 +116,8 @@ h1{
 
 #frame1.active{
     background-image: none;
-    width: 200px;
-    height: 330px;
+    width: 600px;
+    height: 400px;
 }
 #frame7.active {
     background-image: url(Img/7.png);
