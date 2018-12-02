@@ -91,11 +91,21 @@ h1{
 .sub {
     opacity: 0 !important;
     display: None;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .sub.active{
     display: block;
     opacity: 1 !important;
+    transition: all 0.5s ease-in-out;
+
+}
+#video.active{
+    transition: all 0.5s ease-in-out;
+    width: 200px;
+    height: 330px;
+
 }
 .frame.active {
     width: 300px;
@@ -104,8 +114,10 @@ h1{
     transition: all 0.5s ease-in-out;
 }
 
-#fram1 .frame .active{
+#frame1.active{
     background-image: none;
+    width: 200px;
+    height: 330px;
 }
 #frame7.active {
     background-image: url(Img/7.png);
