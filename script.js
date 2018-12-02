@@ -1,8 +1,9 @@
-$(document).ready(function(){
-    $('#color-overlay').click(function() {
-        $(this).css("opacity", "1");
+$(document).ready(function () {
+    $(document).click(function () {
+        $('#color-overlay').css("visibility", "visible");
+        $('#color-overlay').css("opacity", "1");
     });
-    $('.frame').click(function() {
+    $('.frame').click(function () {
         let frames = document.getElementsByClassName('frame')
         if (this.classList.contains('active')) {
             this.classList.remove('active')
@@ -16,11 +17,12 @@ $(document).ready(function(){
                 frames[i].classList.remove('active')
                 frames[i].style.opacity = '0.4'
             }
+
             var t = this;
-            setTimeout(function(){
+            setTimeout(function () {
                 $(t).addClass('active')
                 // $('#color-overlay').css('background', t.dataset.complementary)    
-            },300);
+            }, 150);
         }
     });
 })

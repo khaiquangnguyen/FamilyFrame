@@ -11,8 +11,11 @@ body{
     height: 100%;
     background-color: white;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.6s ease-in-out;
     display: inline-block;
+    visibility: hidden;
+
+
  }
 
 
@@ -24,21 +27,74 @@ body{
 
 .frame {
     display: inline-block;
-    width:150px;
-    height:150px;
-    transition: all 500ms ease-in-out;
-    margin: 20px;
+    width:10em;
+    height:10em;
+    transition: all 0.6s ease-in-out;
+    margin: 1em;
 }
 
-.frame.active {
-    width: 340px;
-    height: 340px;
-    opacity: 1 !important;
-}
 
 #container{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 53%;
+    width: 60em;
+}
+
+#frame1{
+    background-image: url(Img/11.png);
+    background-size: cover;
+}
+#frame2{
+    background-image: url(Img/9.png);
+    background-size: cover;
+}
+
+#frame3{
+    background-image: url(Img/1.png);
+    background-size: cover;
+}
+
+#frame4{
+    background-image: url(Img/3.png);
+    background-size: cover;
+}
+
+#frame5{
+    background-image: url(Img/4.png);
+    background-size: cover;
+}
+
+#frame6{
+    background-image: url(Img/5.png);
+    background-size: cover;
+}
+
+#frame7{
+    background-image: url(Img/6.png);
+    background-size: cover;
+}
+
+
+.frame.active {
+    width: 20em;
+    height: 20em;
+    opacity: 1 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+#frame7.active {
+    background-image: url(Img/7.png);
+    background-size: cover;
+    width: 14em;
+    height: 22em;
+    opacity: 1 !important;
+}
+
+#frame2.active {
+    background-image: url(Img/10.png);
+    background-size: cover;
+    width: 38em;
+    height: 25em;
+    opacity: 1 !important;
 }
